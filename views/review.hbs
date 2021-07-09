@@ -1,0 +1,26 @@
+<main class="main__review">
+        <h1 class="main__h1">Отзывы</h1>
+        {{#each reviews}}
+        <p class="main__subtitle-review">Напишите отзыв о нашем сайте</p>
+        <div class="main__review-window">    
+        <p class="main__subtitle-review">{{text}}</p>
+        <p class="main__subtitle-review">{{author}}</p>             
+        </div>
+
+        {{/each}}
+
+        <form action="/review">
+        
+        <p class="">Текст</p>
+        <input type="text" size="80" name="text">
+
+        <p class="">Автор</p>
+        <input type="text" size="80" name="author">
+
+
+        </form>
+
+        <div>
+            <button class="main__button" type="submit">Добавить</button>
+        </div>
+    </main>

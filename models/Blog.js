@@ -16,3 +16,5 @@ const schema = new Schema({
         type: String,
     },
 })
+
+module.exports = model('Blog', schema)

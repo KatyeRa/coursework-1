@@ -1,0 +1,28 @@
+<main class="main">
+        <h1 class="main__h1">Главная</h1>
+        <div class="main__song-list">
+            {{#each musics}}
+            <ol class="main__song-list__ol">
+                <li>{{author}} {{title}}</li>
+            </ol>
+            {{#each musics}}
+        </div>
+
+        <form action="/">
+        
+        <p class="">Название</p>
+        <input type="text" size="80" name="title">
+
+        <p class="">Автор</p>
+        <input type="text" size="80" name="author">
+
+        <p class="">Дата выпуска</p>
+        <input type="text" size="80" name="date">
+
+        <p class="">Длительность</p>
+        <input type="text" size="80" name="duration">
+        </form>
+        <div>
+            <button class="main__button" type="submit">Добавить</button>
+        </div>
+    </main>
