@@ -4,7 +4,7 @@ const path = require('path')
 const exphbs = require('express-handlebars')
 
 const musicRoutes = require('./routes/music.js')
-//const authRouter = require('./routes/authRouter.js')
+const authRouter = require('./routes/authRouter.js')
 
 const PORT = process.env.PORT || 3000
 
@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'image')))
 app.use(express.json())
 
 app.use(musicRoutes)
-//app.use(authRouter)
+app.use(authRouter)
 
 async function start() {
     try{
