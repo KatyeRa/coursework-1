@@ -72,7 +72,7 @@
 
 .main__song-list{
     width: 600px;
-    height: 300px;
+    max-height: 3000px;
     background: rgba(169, 47, 213, 0.8);;
     border-radius: 20px;
 
@@ -103,7 +103,7 @@ input[type=text] {
 }
 
 .main__button{
-    width: 120px;
+    width: 200px;
     height: 60px;
     color: #FFF;
     background: #be5bdf;
@@ -118,9 +118,17 @@ input[type=text] {
 }
 
 /*ABOUT*/
+.last{
+    margin-top: 70px;
+}
+
+.start{
+    padding-top: 20px;
+}
 
 .main__about{
     background: #d153ff;
+    height: 500px;
 }
 .main__subtitle{
     color: #FFF;
@@ -141,11 +149,23 @@ input[type=text] {
     font-size: 20px;
     margin-bottom: 15px;
 }
+
+.main__blog{
+    padding-bottom: 30px;
+}
+
+.main__review{
+    padding-bottom: 30px;
+}
+
+.main__review-window{
+    max-height: 2000px;
+}
 .main__blog-window{    
     display: flex;
     flex-direction: column;
     width: 630px;
-    height: 210px;
+    max-height: 2000px;
     border: 1px solid #431E50;
     border-radius: 20px;
     padding: 20px;
