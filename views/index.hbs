@@ -1,0 +1,43 @@
+<main class="main">
+        <h1 class="main__h1">Главная</h1>
+        <div class="main__song-list">
+            <ol class="main__song-list__ol">
+                {{#each musics}}
+                <li>{{author}} - {{title}}</li>
+                {{/each}}
+            </ol>
+        </div>
+
+        <h1 class="main__h1">Добавьте песню</h1>
+
+        <form action="/" method="POST">
+        
+        <div class="flex">
+            <p class="modal-form-paragraph paragraph-7">Автор:
+                <input type="text" size="80" name="author"> 
+            </p>
+        </div>
+
+        <div class="flex">
+            <p class="modal-form-paragraph paragraph-7">Название:
+                <input type="text" size="80" name="title"> 
+            </p>
+        </div>
+
+        <div class="flex">
+            <p class="modal-form-paragraph paragraph-7">Дата выхода:
+                <input type="text" size="80" name="date"> 
+            </p>
+        </div>
+
+        <div class="flex">
+            <p class="modal-form-paragraph paragraph-7">Длительность:
+                <input type="text" size="80" name="duration"> 
+            </p>
+        </div>  
+
+        <div>
+            <button class="main__button" type="submit">Добавить</button>
+        </div>
+        </form>
+</main>

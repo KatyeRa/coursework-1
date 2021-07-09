@@ -1,0 +1,41 @@
+<main class="main__blog">
+
+        <h1 class="main__h1">Блог</h1>
+
+        <div class="main__blog-window">   
+            {{#each blogs}}             
+            <h2 class="main__h2">{{title}}</h2>
+            <p class="main__subtitle-2">{{text}}</p>
+            <p class="main__subtitle-2">{{author}}</p>
+            {{/each}}
+        </div>
+
+        <h1 class="main__h1">Добавьте новость</h1>
+
+        <form action="/blog" method="POST">
+        
+        <div class="flex">
+            <p class="modal-form-paragraph paragraph-7">Название новости:
+                <input type="text" size="80" name="title"> 
+            </p>
+        </div>
+
+        <div class="flex">
+            <p class="modal-form-paragraph paragraph-7">Новость:
+                <input type="text" size="80" name="text"> 
+            </p>
+        </div>
+
+        <div class="flex">
+            <p class="modal-form-paragraph paragraph-7">Автор:
+                <input type="text" size="80" name="author"> 
+            </p>
+        </div>   
+    
+
+        <div>
+            <button class="main__button" type="submit">Добавить</button>
+        </div>
+
+        </form>
+</main>
