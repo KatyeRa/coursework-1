@@ -5,12 +5,11 @@ const Review = require('../models/Review')
 const router = Router()
 
 router.get('/', async (req,res) => {
-    //const portfolios = await Portfolio.find({}).lean()
+    const musics = await Music.find({}).lean()
 
     res.render('index',{
         title:'Главная',
-        isIndex: true,
-        //portfolios
+        musics
     })
 })
 
@@ -33,9 +32,12 @@ router.get('/about', (req, res) => {
     })
 })
 
-router.get('/blog', (req, res) => {
+router.get('/blog', async(req, res) => {
+    const blogs = await Blog.find({}).lean()
+
     res.render('blog', {
-        title: 'Блог'
+        title: 'Блог',
+        blogs
     })
 })
 
@@ -50,10 +52,23 @@ router.post('/blog', async (req, res) => {
     res.redirect('/')
 })
 
-router.get('/reviews', (req, res) => {
-    res.render('reviews', {
-        title: 'Отзывы'
+router.get('/review', async(req, res) => {
+    const reviews = await Review.find({}).lean()
+
+    res.render('review', {
+        title: 'Отзывы',
+        reviews
     })
+})
+
+router.post('/review', async (req, res) => {
+    const review = new Review({
+        author: req.body.author,
+        text: req.body.text
+    })
+
+    await review.save()
+    res.redirect('/')
 })
 
 module.exports = router

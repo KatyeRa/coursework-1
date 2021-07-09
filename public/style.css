@@ -65,6 +65,11 @@
     margin-bottom: 15px;
     color: #FFF;
 }
+
+.main__button{
+    cursor: pointer;
+}
+
 .main__song-list{
     width: 600px;
     height: 300px;
@@ -79,6 +84,24 @@
     padding: 30px;
     color: #FFF;
 }
+
+.modal-form-paragraph{
+    color: #FFF;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.paragraph-7{
+    margin-right: 20px;
+    margin-left: 100px;
+}
+input[type=text] {
+    height: 20px;
+    border:0 solid #fff;
+    background:#d153ff;
+    border-bottom: 1px solid #FFF;
+    outline: none;
+}
+
 .main__button{
     width: 120px;
     height: 60px;

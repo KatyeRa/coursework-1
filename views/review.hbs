@@ -1,7 +1,7 @@
 <main class="main__review">
         <h1 class="main__h1">Отзывы</h1>
-        {{#each reviews}}
         <p class="main__subtitle-review">Напишите отзыв о нашем сайте</p>
+        {{#each reviews}}
         <div class="main__review-window">    
         <p class="main__subtitle-review">{{text}}</p>
         <p class="main__subtitle-review">{{author}}</p>             
@@ -9,18 +9,32 @@
 
         {{/each}}
 
-        <form action="/review">
+        <h1 class="main__h1">Добавьте отзыв</h1>
+
+        <form action="/review" method="POST">
         
-        <p class="">Текст</p>
-        <input type="text" size="80" name="text">
+        <div class="flex">
+            <p class="modal-form-paragraph paragraph-7">Текст:
+                <input type="text" size="80" name="text"> 
+            </p>
+        </div>
 
-        <p class="">Автор</p>
-        <input type="text" size="80" name="author">
+        <div class="flex">
+            <p class="modal-form-paragraph paragraph-7">Автор:
+                <input type="text" size="80" name="author"> 
+            </p>
+        </div>
 
+        <div class="flex">
+            <p class="modal-form-paragraph paragraph-7">Название новости:
+                <input type="text" size="80" name="news"> 
+            </p>
+        </div>   
 
-        </form>
+        
 
         <div>
             <button class="main__button" type="submit">Добавить</button>
         </div>
-    </main>
+        </form>
+</main>

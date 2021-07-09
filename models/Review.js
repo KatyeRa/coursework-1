@@ -12,4 +12,4 @@ const schema = new Schema({
     },
 })
 
-module.exports = model('Blog', schema)
+module.exports = model('Review', schema)
