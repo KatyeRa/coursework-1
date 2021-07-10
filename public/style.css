@@ -42,6 +42,8 @@
 }
 .nav__item a{
     color: #FFF;
+}
+.nav__item a:hover{
     text-decoration: underline;
 }
 .nav__item{
@@ -117,9 +119,15 @@ input[type=text] {
     margin-right: auto;
 }
 
+.main__button:hover{
+    transition: 0.4s;
+    color: #be5bdf;
+    background: #FFF;
+}
+
 /*ABOUT*/
 .last{
-    margin-top: 70px;
+    padding: 10px;
 }
 
 .start{
@@ -184,4 +192,24 @@ input[type=text] {
 .main__subtitle-review{
     color: #FFF;
     margin-left: 100px;
+}
+
+/*FOOTER*/
+
+.footer{
+    justify-content: space-between;
+    width: 100%;
+    background: #A92FD4;
+    color: #FFF;
+}
+.footer__img{
+    margin-right: 50px;
+    justify-content: flex-end;
+    align-self: center;
+}
+.footer__img-print{
+    display: none;
+}
+@media (max-width: 600px) {
+    
 }
