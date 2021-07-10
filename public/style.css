@@ -210,6 +210,84 @@ input[type=text] {
 .footer__img-print{
     display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+    .header{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .header__img{
+        width: 20px;
+        height: 20px;
+    }
+    .header__h1{
+        font-size: 1em;
+        width: 40px;
+    }
+    .header__logo{
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+    }
+    .nav{
+        margin: 5px;
+    }
+    .nav__ul{
+        flex-direction: column;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+    }
+    .nav__ul li{
+        display: block;
+		text-align: center;
+		padding: 7px;
+    }
+
+
+    .main__h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1em;
+    }
+    .main__button{
+        display: block;
+		text-align: center;
+    }
+    .main__song-list{
+        display: block;
+        flex-direction: column;
+		width: 70%;
+		height: 50%;
+		justify-content: center;
+        padding: 10px;
+    }
+    .modal-form-paragraph input{
+        flex-direction: column;
+		width: 70%;
+		height: 50%;
+		justify-content: center;
+    }
+    .main__text-2{
+        font-size: 1em;
+        padding: auto;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__img{
+        display: flex;
+        justify-content: center;
+        max-height: 70px;
+    }
+    
+}
+@media (max-width: 411px) {
+    /*.footer{
+        flex-direction: column;
+        justify-content: center;
+    }*/
     
 }
