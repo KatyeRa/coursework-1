@@ -167,7 +167,7 @@ input[type=text] {
 }
 
 .main__review-window{
-    max-height: 2000px;
+    max-height: 200px;
 }
 .main__blog-window{    
     display: flex;
@@ -182,6 +182,7 @@ input[type=text] {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
 }
 
 /*REVIEW*/
@@ -203,6 +204,7 @@ input[type=text] {
     color: #FFF;
 }
 .footer__img{
+    max-height: 120px;
     margin-right: 50px;
     justify-content: flex-end;
     align-self: center;
@@ -282,12 +284,5 @@ input[type=text] {
         justify-content: center;
         max-height: 70px;
     }
-    
-}
-@media (max-width: 411px) {
-    /*.footer{
-        flex-direction: column;
-        justify-content: center;
-    }*/
     
 }
