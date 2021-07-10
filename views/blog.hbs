@@ -2,17 +2,19 @@
 
         <h1 class="main__h1">Блог</h1>
 
+        {{#each blogs}}      
         <div class="main__blog-window">   
-            {{#each blogs}}             
+        
             <h2 class="main__h2">{{title}}</h2>
             <p class="main__subtitle-2">{{text}}</p>
             <p class="main__subtitle-2">{{author}}</p>
-            {{/each}}
+            
         </div>
+        {{/each}}
 
-        <h1 class="main__h1">Добавьте новость</h1>
+        <h1 class="main__h1 notprint">Добавьте новость</h1>
 
-        <form action="/blog" method="POST">
+        <form class="main__form" action="/blog" method="POST">
         
         <div class="flex">
             <p class="modal-form-paragraph paragraph-7">Название новости:

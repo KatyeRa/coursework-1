@@ -1,0 +1,18 @@
+@media print {
+	@page {
+        margin: 1cm;
+    }
+
+    .nav{
+        display: none;
+    }
+    .notprint{
+        display: none;
+    }
+    .main__form{
+        display: none;
+    }
+    .footer__img{
+        display: none;
+    }
+}
